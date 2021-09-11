@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet"> <!-- Load Styles -->
+  <link href="css/styels.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list" class="">
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Coral Reefs</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Fringing Reef" class="active">
+      <div class="landing__container">
+        <h2>Fringing Reef</h2>
+        <p>Fringing reefs are relatively young. They can develop in shallow waters along the coast of tropical islands or continents. The corals grow upwards to sea level or just below and outwards towards the open ocean.</p>
+
+        <p>Fringing reefs are generally narrow platforms a short distance from shore and don't contain a substantial lagoon.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Platform Reef" class="">
+      <div class="landing__container">
+        <h2>Platform Reef</h2>
+        <p>If the reef grows on a sand bank, elongation may result. The shape of an elongated platform reef may be determined by the orientation of rising and falling tidal currents. These may be directly opposed to each other. The boat-shaped reefs
+          of Torres Strait, between Australia and New Guinea, apparently developed in such a pattern.</p>
+        <p>Platform reefs usually lie in sheltered seas and quite far offshore. They are flat-topped with small and very shallow lagoons.</p>
+
+      </div>
+    </section>
+    <section id="section3" data-nav="Barrier Reef" class="">
+      <div class="landing__container">
+        <h2>Barrier Reef</h2>
+        <p>A coral reef growing parallel to the coastline and separated from it by a lagoon is called a barrier reef. The lagoon may develop between the fringing reef and the land. As the reef continues to grow further and further offshore it
+          eventually reaches the edge of the continental shelf. Barrier reefs can also originate offshore if the depth of the seabed out there is shallow enough to allow corals to grow.</p>
+
+        <p>The most famous barrier reef is the Great Barrier Reef in Australia. It stretches over 2300 km and covers over 200'000 km2. It lies between 24 and 240 km from the main continent.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Atoll" class="">
+      <div class="landing__container">
+        <h2>Atoll</h2>
+        <p>Atolls are rings of reef, often encircling an island (sand and coral rubble). They typically have a shallow, sandy, sheltered lagoon in the middle. Access to the open sea beyond is through a number of channels. These provide fresh and
+          colder water for the lagoons. Corals atolls are on the top of submarine mountains. These mountains are remnants of volcanos. Once there were fringing reefs around the volcano. As it slowly submerged the corals continued to grow up to the
+          surface of the water.</p>
+
+        <p>What remained after the volcano became invisible is a ring of coral reefs surrounded by deep ocean. However some atolls were probably formed by rising sea levels rather by the sinking of islands. Other theories suggest that corals
+          colonized eroded limestone formations, so called karstic saucers.</p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  <script src="js/app.js"> </script>
+</body>
+
+</html>
